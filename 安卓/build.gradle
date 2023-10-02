@@ -1,51 +1,46 @@
-/*
- * Copyright (C) 2015 Basil Miller
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-apply plugin: 'com.android.library'
 
 
-version = "1.2.5"
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion '27.0.3'
+    compileSdk 32
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 30
+        applicationId "com.example.bpl"
+        minSdk 26
+        targetSdk 32
         versionCode 1
-        versionName "1.2.5"
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-}
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    //noinspection GradleCompatible,GradleDependency
-    implementation 'com.android.support:design:27.1.1'
-    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
-    implementation 'androidx.interpolator:interpolator:1.0.0'
-    implementation 'com.google.android.material:material:1.4.0'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
-def siteUrl = 'https://github.com/DevLight-Mobile-Agency/NavigationTabBar'
-def gitUrl = 'https://github.com/DevLight-Mobile-Agency/NavigationTabBar.git'
-group = "devlight.io"
+dependencies {
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    testImplementation 'junit:junit:4.13.2'
+
+    implementation project(path: ':video-player-manager')
+    implementation project(path: ':navigationtabbar')
+    implementation project(path: ':list-visibility-utils')
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
 
