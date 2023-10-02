@@ -1,0 +1,30 @@
+com/volokh/danylo/visibility_utils/calculator/BaseItemsVisibilityCalculator.java
+ com.volokh.danylo.visibility_utils.calculator.BaseItemsVisibilityCalculator
+com/volokh/danylo/visibility_utils/utils/Config.java
+ com.volokh.danylo.visibility_utils.utils.Config
+com/volokh/danylo/visibility_utils/calculator/SingleListViewItemActiveCalculator.java
+ com.volokh.danylo.visibility_utils.calculator.SingleListViewItemActiveCalculator
+ com.volokh.danylo.visibility_utils.calculator.SingleListViewItemActiveCalculator$1
+ com.volokh.danylo.visibility_utils.calculator.SingleListViewItemActiveCalculator$Callback
+com/volokh/danylo/visibility_utils/utils/Logger.java
+ com.volokh.danylo.visibility_utils.utils.Logger
+com/volokh/danylo/visibility_utils/scroll_utils/ListViewItemPositionGetter.java
+ com.volokh.danylo.visibility_utils.scroll_utils.ListViewItemPositionGetter
+com/volokh/danylo/visibility_utils/items/ListItem.java
+ com.volokh.danylo.visibility_utils.items.ListItem
+com/volokh/danylo/visibilityutils/BuildConfig.java
+ com.volokh.danylo.visibilityutils.BuildConfig
+com/volokh/danylo/visibility_utils/scroll_utils/ItemsPositionGetter.java
+ com.volokh.danylo.visibility_utils.scroll_utils.ItemsPositionGetter
+com/volokh/danylo/visibility_utils/calculator/ListItemsVisibilityCalculator.java
+ com.volokh.danylo.visibility_utils.calculator.ListItemsVisibilityCalculator
+com/volokh/danylo/visibility_utils/items/ListItemData.java
+ com.volokh.danylo.visibility_utils.items.ListItemData
+com/volokh/danylo/visibility_utils/scroll_utils/ScrollDirectionDetector.java
+ com.volokh.danylo.visibility_utils.scroll_utils.ScrollDirectionDetector
+ com.volokh.danylo.visibility_utils.scroll_utils.ScrollDirectionDetector$OnDetectScrollListener
+ com.volokh.danylo.visibility_utils.scroll_utils.ScrollDirectionDetector$ScrollDirection
+com/volokh/danylo/visibility_utils/scroll_utils/RecyclerViewItemPositionGetter.java
+ com.volokh.danylo.visibility_utils.scroll_utils.RecyclerViewItemPositionGetter
+com/volokh/danylo/visibility_utils/calculator/DefaultSingleItemCalculatorCallback.java
+ com.volokh.danylo.visibility_utils.calculator.DefaultSingleItemCalculatorCallback
